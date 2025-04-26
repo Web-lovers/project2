@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+.job-box{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.title-small{
+    font-size: 20px;
+}
+.form-conatiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+
+    .control-form {
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .control-form input{
+      margin-top: 6px;
+      padding:10px;
+      }
+      .control-form select{
+        padding: 10px;
+        margin-top: 6px;
+      }
+      .btn-container{
+        display: flex;
+        justify-content: end;
+        text-align: end;
+        align-items: end;
+       
+      }
+      .btn-container button{
+        padding: 12px;
+        background-color: rgb(44, 214, 112);
+        border: 0px;
+      }
+      /*@media (max-width: 600px) {
+      /*  .form-conatiner {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .job-box {
+            width: 100%;
+          height: auto;
+          margin: 20px auto;
+        }
+        .container{
+            width: 100%;
+            height: auto;
+            
+        }
+      }*/
+      @media (max-width: 800px) {
+        .form-conatiner {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .job-box {
+            width: 80%;
+          height: auto;
+          margin: auto;
+          margin: 20px auto;
+        }
+        .container{
+            width: 100%;
+            height: auto;
+            
+        }
+      }
+      
